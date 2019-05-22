@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='CodableCloudKit-iOSTests.xctest' tests='1' failures='0'>
-  <testsuite name='CodableCloudKit_iOSTests.CodableCloudKitTests' tests='1' failures='0'>
-    <testcase classname='CodableCloudKit_iOSTests.CodableCloudKitTests' name='testExample' time='0.001'/>
-  </testsuite>
-</testsuites>

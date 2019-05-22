@@ -1,23 +1,23 @@
 <p align="center">
-   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="CodableCloudKit Logo">
+<img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="CodableCloudKit Logo">
 </p>
 
 <p align="center">
-   <a href="https://developer.apple.com/swift/">
-      <img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
-   </a>
-   <a href="http://cocoapods.org/pods/CodableCloudKit">
-      <img src="https://img.shields.io/cocoapods/v/CodableCloudKit.svg?style=flat" alt="Version">
-   </a>
-   <a href="http://cocoapods.org/pods/CodableCloudKit">
-      <img src="https://img.shields.io/cocoapods/p/CodableCloudKit.svg?style=flat" alt="Platform">
-   </a>
-   <a href="https://github.com/Carthage/Carthage">
-      <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
-   </a>
-   <a href="https://github.com/apple/swift-package-manager">
-      <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
-   </a>
+<a href="https://developer.apple.com/swift/">
+<img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
+</a>
+<a href="http://cocoapods.org/pods/CodableCloudKit">
+<img src="https://img.shields.io/cocoapods/v/CodableCloudKit.svg?style=flat" alt="Version">
+</a>
+<a href="http://cocoapods.org/pods/CodableCloudKit">
+<img src="https://img.shields.io/cocoapods/p/CodableCloudKit.svg?style=flat" alt="Platform">
+</a>
+<a href="https://github.com/Carthage/Carthage">
+<img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
+</a>
+<a href="https://github.com/apple/swift-package-manager">
+<img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
+</a>
 </p>
 
 # CodableCloudKit
@@ -52,7 +52,7 @@ pod 'CodableCloudKit'
 To integrate CodableCloudKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Laurent Grondin/CodableCloudKit"
+github "RpX974/CodableCloudKit"
 ```
 
 Run `carthage update` to build the framework and drag the built `CodableCloudKit.framework` into your Xcode project. 
@@ -65,7 +65,7 @@ To integrate using Apple's [Swift Package Manager](https://swift.org/package-man
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Laurent Grondin/CodableCloudKit.git", from: "1.0.0")
+.package(url: "https://github.com/RpX974/CodableCloudKit.git", from: "1.0.0")
 ]
 ```
 
@@ -94,28 +94,28 @@ Let's say you have a `User` model you want to sync to CloudKit. This is what the
 
 ```swift
 class User: CodableCloud {
-    let username: String
+let username: String
 }
 
 //OR
 
 class User: CodableCloud /* OR Codable & Cloud */ {
-    let username: String
+let username: String
 
-    enum CodingKeys: String, CodingKey {
-        case username
-    }
+enum CodingKeys: String, CodingKey {
+case username
+}
 
-    required init(username: String) {
-        self.username = username
-        super.init()
-    }
+required init(username: String) {
+self.username = username
+super.init()
+}
 
-    required override init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.username = try container.decode(String.self, forKey: .username)
-        try super.init(from: decoder)
-    }
+required override init(from decoder: Decoder) throws {
+let container = try decoder.container(keyedBy: CodingKeys.self)
+self.username = try container.decode(String.self, forKey: .username)
+try super.init(from: decoder)
+}
 }
 ```
 `CodableCloud` is a typealias of `Codable & Cloud`.
@@ -124,7 +124,7 @@ class User: CodableCloud /* OR Codable & Cloud */ {
 
 ```swift
 func saveInCloud(_ database: CKDatabase = CKContainer.default().privateCloudDatabase, 
-                 _ completion: ResultCompletion<CKRecord>? = nil)
+_ completion: ResultCompletion<CKRecord>? = nil)
 ```
 
 Save method has 2 parameters : a database with a default value (PrivateCloudDatabase) and an optional completion that returns the `CKRecord`. If the object already exists in iCloud, it will update instead of creating a new record.
@@ -140,13 +140,13 @@ user.saveInCloud(CKContainer.default().publicCloudDatabase)
 
 // With completion
 user.saveInCloud { [weak self] (result: Result<CKRecord>) in
-    guard let `self` = self else { return }
-    switch result {
-    case .success(_):
-        print("\(user.username) saved in Cloud")
-    case .failure(let error):
-        print(error.localizedDescription)
-    }
+guard let `self` = self else { return }
+switch result {
+case .success(_):
+print("\(user.username) saved in Cloud")
+case .failure(let error):
+print(error.localizedDescription)
+}
 }
 ```
 
@@ -154,20 +154,20 @@ user.saveInCloud { [weak self] (result: Result<CKRecord>) in
 
 ```swift
 func retrieveFromCloud(_ database: CKDatabase = CKContainer.default().privateCloudDatabase, 
-                       completion: @escaping ResultCompletion<[Self]>)
+completion: @escaping ResultCompletion<[Self]>)
 ```
 
 Retrieve method has 2 parameters : a database with a default value (PrivateCloudDatabase) and an optional completion that returns a `[CodableCloud]`.
 
 ```swift
 User.retrieveFromCloud(completion: { [weak self] (result: Result<[User]>) in
-    guard let `self` = self else { return }
-    switch result {
-    case .success(let users):
-        print("\(users.count) users retrieved from Cloud")
-    case .failure(let error):
-        print(error.localizedDescription)
-    }
+guard let `self` = self else { return }
+switch result {
+case .success(let users):
+print("\(users.count) users retrieved from Cloud")
+case .failure(let error):
+print(error.localizedDescription)
+}
 })
 ```
 
@@ -175,7 +175,7 @@ User.retrieveFromCloud(completion: { [weak self] (result: Result<[User]>) in
 
 ```swift
 func removeFromCloud(_ database: CKDatabase = CKContainer.default().privateCloudDatabase,
-                     _ completion: ResultCompletion<CKRecord.ID?>? = nil)
+_ completion: ResultCompletion<CKRecord.ID?>? = nil)
 ```
 
 Retrieve method has 2 parameters : a database with a default value (PrivateCloudDatabase) and an optional completion that returns the `CKRecord.ID` as optional.
@@ -191,13 +191,13 @@ user.removeFromCloud(CKContainer.default().publicCloudDatabase)
 
 // With completion
 user.removeFromCloud { [weak self] (result: Result<CKRecord.ID?>) in
-    guard let `self` = self else { return }
-    switch result {
-    case .success(_):
-        print("\(user.username) removed from Cloud")
-    case .failure(let error):
-        print(error.localizedDescription)
-    }
+guard let `self` = self else { return }
+switch result {
+case .success(_):
+print("\(user.username) removed from Cloud")
+case .failure(let error):
+print(error.localizedDescription)
+}
 }
 ```
 

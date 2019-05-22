@@ -12,17 +12,17 @@ import CodableCloudKit
 // Exemple from Json/Data
 
 /* let json = """
-{
+ {
  "username": "Federico Zanetello",
-}
-""".data(using: .utf8)!
-
-class User: Codable & Cloud {
-    let username: String
-}
-
-let user = try! JSONDecoder().decode(User.self, from: json)
-*/
+ }
+ """.data(using: .utf8)!
+ 
+ class User: Codable & Cloud {
+ let username: String
+ }
+ 
+ let user = try! JSONDecoder().decode(User.self, from: json)
+ */
 
 // MARK: - User
 
@@ -50,7 +50,7 @@ class User: CodableCloud /* OR Codable & Cloud */ {
 class ViewController: UIViewController {
     
     // MARK: - Views
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: Properties
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Custom Functions
-
+    
     func retrieveUsersFromCloud() {
         User.retrieveFromCloud(completion: { [weak self] (result: Result<[User]>) in
             guard let `self` = self else { return }

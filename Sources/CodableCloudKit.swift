@@ -63,7 +63,7 @@ public extension Encodable {
             return nil
         }
     }
-
+    
     private var newRecord: CKRecord? {
         let record = CKRecord.init(recordType: Self.stringClass)
         guard let value: String = self.string() else { return nil }

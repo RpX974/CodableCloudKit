@@ -16,8 +16,8 @@
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
 		3D9C433422746323000A6585 /* CodableCloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* CodableCloudKit.framework */; };
 		3D9C433522746323000A6585 /* CodableCloudKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* CodableCloudKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC722C6722950D95003911C8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC722C6622950D95003911C8 /* CloudKit.framework */; };
-		AC722C6922950E31003911C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC722C6822950E31003911C8 /* Main.storyboard */; };
+		ACBE86AA229539A0005C74A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBE86A9229539A0005C74A5 /* Main.storyboard */; };
+		ACBE86AE22953A01005C74A5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBE86AD22953A01005C74A5 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,9 +79,9 @@
 		3D9C432A2274629C000A6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC722C6422950D7D003911C8 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
-		AC722C6622950D95003911C8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		AC722C6822950E31003911C8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ACBE86A9229539A0005C74A5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ACBE86AB229539F0005C74A5 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
+		ACBE86AD22953A01005C74A5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9C433422746323000A6585 /* CodableCloudKit.framework in Frameworks */,
-				AC722C6722950D95003911C8 /* CloudKit.framework in Frameworks */,
+				ACBE86AE22953A01005C74A5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 				3D9C43222274629B000A6585 /* Example */,
 				3D9C429B227458E8000A6585 /* Configs */,
 				3D9C429122745894000A6585 /* Products */,
-				AC722C6522950D95003911C8 /* Frameworks */,
+				ACBE86AC22953A01005C74A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,7 +177,7 @@
 		3D9C43222274629B000A6585 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				AC722C6422950D7D003911C8 /* Example.entitlements */,
+				ACBE86AB229539F0005C74A5 /* Example.entitlements */,
 				3D9C43232274629B000A6585 /* AppDelegate.swift */,
 				3D9C43252274629B000A6585 /* ViewController.swift */,
 				3D9C4333227462B9000A6585 /* Resources */,
@@ -189,17 +189,17 @@
 			isa = PBXGroup;
 			children = (
 				3D9C432A2274629C000A6585 /* Assets.xcassets */,
+				ACBE86A9229539A0005C74A5 /* Main.storyboard */,
 				3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */,
-				AC722C6822950E31003911C8 /* Main.storyboard */,
 				3D9C432F2274629C000A6585 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		AC722C6522950D95003911C8 /* Frameworks */ = {
+		ACBE86AC22953A01005C74A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC722C6622950D95003911C8 /* CloudKit.framework */,
+				ACBE86AD22953A01005C74A5 /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +225,7 @@
 				3D9C428C22745894000A6585 /* Sources */,
 				3D9C428D22745894000A6585 /* Frameworks */,
 				3D9C428E22745894000A6585 /* Resources */,
+				3D9C42CE22745AEA000A6585 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -341,13 +342,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC722C6922950E31003911C8 /* Main.storyboard in Resources */,
+				ACBE86AA229539A0005C74A5 /* Main.storyboard in Resources */,
 				3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */,
 				3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D9C42CE22745AEA000A6585 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D9C428C22745894000A6585 /* Sources */ = {
@@ -546,6 +568,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.CodableCloudKit.CodableCloudKit-iOS";
 				PRODUCT_NAME = CodableCloudKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -576,6 +599,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.CodableCloudKit.CodableCloudKit-iOS";
 				PRODUCT_NAME = CodableCloudKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -596,6 +620,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.CodableCloudKit.CodableCloudKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -614,6 +639,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.CodableCloudKit.CodableCloudKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
