@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/rpx/Documents/Apps/PODS/CodableCloudKit/.build/x86_64-apple-macosx/debug/CodableCloudKit.build/master.swiftdeps"
+  },
+  "/Users/rpx/Documents/Apps/PODS/CodableCloudKit/Sources/CodableCloudKit.swift": {
+    "dependencies": "/Users/rpx/Documents/Apps/PODS/CodableCloudKit/.build/x86_64-apple-macosx/debug/CodableCloudKit.build/CodableCloudKit.d",
+    "object": "/Users/rpx/Documents/Apps/PODS/CodableCloudKit/.build/x86_64-apple-macosx/debug/CodableCloudKit.build/CodableCloudKit.swift.o",
+    "swiftmodule": "/Users/rpx/Documents/Apps/PODS/CodableCloudKit/.build/x86_64-apple-macosx/debug/CodableCloudKit.build/CodableCloudKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/rpx/Documents/Apps/PODS/CodableCloudKit/.build/x86_64-apple-macosx/debug/CodableCloudKit.build/CodableCloudKit.swiftdeps"
+  }
+}

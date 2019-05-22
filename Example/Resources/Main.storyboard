@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9K-dy-9Ye">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3N1-Eu-XeH">
+            <objects>
+                <viewController id="q9K-dy-9Ye" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dU8-Fv-a1y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qh3-ae-jJp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="hV0-L1-8wm">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hV0-L1-8wm" id="66p-ty-pTf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="q9K-dy-9Ye" id="7SS-Xz-IU9"/>
+                                    <outlet property="delegate" destination="q9K-dy-9Ye" id="eF0-bK-t2q"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3b-Rp-f6Y">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cog-YM-yD1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Add a new user">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="q9K-dy-9Ye" eventType="touchUpInside" id="Vyj-Cf-YzT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t3b-Rp-f6Y" firstAttribute="leading" secondItem="pvF-ad-iSu" secondAttribute="leading" id="2vL-XH-aTf"/>
+                            <constraint firstItem="t3b-Rp-f6Y" firstAttribute="top" secondItem="qh3-ae-jJp" secondAttribute="bottom" id="EjY-zE-CvX"/>
+                            <constraint firstItem="qh3-ae-jJp" firstAttribute="leading" secondItem="pvF-ad-iSu" secondAttribute="leading" id="Qgg-lf-pad"/>
+                            <constraint firstItem="qh3-ae-jJp" firstAttribute="trailing" secondItem="pvF-ad-iSu" secondAttribute="trailing" id="SwD-LF-ehD"/>
+                            <constraint firstItem="pvF-ad-iSu" firstAttribute="trailing" secondItem="t3b-Rp-f6Y" secondAttribute="trailing" id="e7j-fC-PZ1"/>
+                            <constraint firstItem="pvF-ad-iSu" firstAttribute="bottom" secondItem="t3b-Rp-f6Y" secondAttribute="bottom" id="ln4-FI-zMh"/>
+                            <constraint firstItem="qh3-ae-jJp" firstAttribute="top" secondItem="pvF-ad-iSu" secondAttribute="top" id="uuA-ut-Lea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pvF-ad-iSu"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="qh3-ae-jJp" id="McA-7t-m2v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzQ-6g-xzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="151.33928571428569"/>
+        </scene>
+    </scenes>
+</document>

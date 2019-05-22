@@ -1,0 +1,564 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Cloud"
+- "CloudError"
+- "Result"
+- "CodableCloud"
+- "ResultCompletion"
+provides-nominal:
+- "15CodableCloudKit0B0C"
+- "15CodableCloudKit0B5ErrorO"
+- "15CodableCloudKit6ResultO"
+provides-member:
+- ["15CodableCloudKit0B0C", ""]
+- ["15CodableCloudKit0B5ErrorO", ""]
+- ["15CodableCloudKit6ResultO", ""]
+- ["SE", ""]
+- ["Se", ""]
+- ["So8CKRecordC", ""]
+- ["SE", "stringClass"]
+- ["SE", "string"]
+- ["SE", "saveInCloud"]
+- ["Se", "stringClass"]
+- ["Se", "retrieveFromCloud"]
+- ["Se", "removeFromCloud"]
+- ["So8CKRecordC", "toModel"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "??"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "CKContainer"
+- "CKDatabase"
+- !private "CKQuery"
+- "CKRecord"
+- "CastingPrecedence"
+- "Cloud"
+- "CloudError"
+- "Codable"
+- "CodableCloud"
+- "Decodable"
+- "Decoder"
+- "Encodable"
+- "Error"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "JSONDecoder"
+- "JSONEncoder"
+- !private "NSPredicate"
+- !private "NSSortDescriptor"
+- "Result"
+- "ResultCompletion"
+- "String"
+- !private "StringLiteralType"
+- "Void"
+depends-member:
+- !private ["Sa", "compactMap"]
+- !private ["SK", "Encoding"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "data"]
+- !private ["SK", "init"]
+- !private ["So11CKContainerC", "default"]
+- !private ["So11CKContainerC", "privateCloudDatabase"]
+- !private ["So10CKDatabaseC", "delete"]
+- !private ["So10CKDatabaseC", "perform"]
+- !private ["So10CKDatabaseC", "save"]
+- !private ["So7CKQueryC", "init"]
+- !private ["So7CKQueryC", "init"]
+- !private ["So7CKQueryC", "sortDescriptors"]
+- !private ["So8CKRecordC", "Cloud"]
+- ["So8CKRecordC", "Decodable"]
+- ["So8CKRecordC", "ID"]
+- !private ["So8CKRecordC", "JSONDecoder"]
+- !private ["So8CKRecordC", "String"]
+- !private ["So8CKRecordC", "init"]
+- !private ["So8CKRecordC", "init"]
+- !private ["So8CKRecordC", "recordID"]
+- !private ["So8CKRecordC", "subscript"]
+- ["So8CKRecordC", "toModel"]
+- !private ["So8CKRecordC", "value"]
+- ["So23CKRecordKeyValueSettingP", "ID"]
+- !private ["So23CKRecordKeyValueSettingP", "JSONDecoder"]
+- !private ["So23CKRecordKeyValueSettingP", "String"]
+- !private ["So23CKRecordKeyValueSettingP", "init"]
+- !private ["So23CKRecordKeyValueSettingP", "init"]
+- !private ["So23CKRecordKeyValueSettingP", "recordID"]
+- !private ["So23CKRecordKeyValueSettingP", "subscript"]
+- !private ["So23CKRecordKeyValueSettingP", "toModel"]
+- !private ["So23CKRecordKeyValueSettingP", "value"]
+- !private ["8CloudKit24CKRecordValueConvertibleP", "data"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "Encoding"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "compactMap"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "data"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "init"]
+- !private ["So15CNKeyDescriptorP", "data"]
+- !private ["s7CVarArgP", "Encoding"]
+- ["s7CVarArgP", "ID"]
+- !private ["s7CVarArgP", "JSONDecoder"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "delete"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "perform"]
+- !private ["s7CVarArgP", "privateCloudDatabase"]
+- !private ["s7CVarArgP", "recordID"]
+- !private ["s7CVarArgP", "save"]
+- !private ["s7CVarArgP", "sortDescriptors"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "toModel"]
+- !private ["s7CVarArgP", "value"]
+- ["15CodableCloudKit0B0C", "CKRecord"]
+- ["15CodableCloudKit0B0C", "Decoder"]
+- ["15CodableCloudKit0B0C", "init"]
+- ["15CodableCloudKit0B0C", "record"]
+- ["15CodableCloudKit0B5ErrorO", "=="]
+- ["15CodableCloudKit0B5ErrorO", "__derived_enum_equals"]
+- ["15CodableCloudKit0B5ErrorO", "_code"]
+- ["15CodableCloudKit0B5ErrorO", "_domain"]
+- ["15CodableCloudKit0B5ErrorO", "_getEmbeddedNSError"]
+- ["15CodableCloudKit0B5ErrorO", "_rawHashValue"]
+- ["15CodableCloudKit0B5ErrorO", "_userInfo"]
+- ["15CodableCloudKit0B5ErrorO", "deinit"]
+- ["15CodableCloudKit0B5ErrorO", "hash"]
+- ["15CodableCloudKit0B5ErrorO", "hashValue"]
+- ["15CodableCloudKit0B5ErrorO", "noRecord"]
+- ["15CodableCloudKit0B5ErrorO", "notCloudType"]
+- !private ["Sl", "Encoding"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "data"]
+- !private ["Sl", "init"]
+- !private ["SL", "Encoding"]
+- !private ["SL", "data"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "Encoding"]
+- ["s28CustomDebugStringConvertibleP", "ID"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "delete"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "perform"]
+- !private ["s28CustomDebugStringConvertibleP", "privateCloudDatabase"]
+- !private ["s28CustomDebugStringConvertibleP", "recordID"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "sortDescriptors"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "toModel"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s17CustomReflectableP", "Encoding"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "data"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Encoding"]
+- ["s23CustomStringConvertibleP", "ID"]
+- !private ["s23CustomStringConvertibleP", "JSONDecoder"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "delete"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "perform"]
+- !private ["s23CustomStringConvertibleP", "privateCloudDatabase"]
+- !private ["s23CustomStringConvertibleP", "recordID"]
+- !private ["s23CustomStringConvertibleP", "save"]
+- !private ["s23CustomStringConvertibleP", "sortDescriptors"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "toModel"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["10Foundation12DataProtocolP", "compactMap"]
+- !private ["Se", "CKContainer"]
+- ["Se", "CKDatabase"]
+- !private ["Se", "CKQuery"]
+- ["Se", "CKRecord"]
+- !private ["Se", "Cloud"]
+- !private ["Se", "Encoding"]
+- !private ["Se", "NSPredicate"]
+- !private ["Se", "NSSortDescriptor"]
+- ["Se", "ResultCompletion"]
+- ["Se", "String"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "data"]
+- !private ["Se", "init"]
+- ["Se", "removeFromCloud"]
+- ["Se", "retrieveFromCloud"]
+- ["Se", "stringClass"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "CKContainer"]
+- ["SE", "CKDatabase"]
+- ["SE", "CKRecord"]
+- !private ["SE", "Cloud"]
+- !private ["SE", "CloudError"]
+- !private ["SE", "Encoding"]
+- ["SE", "JSONEncoder"]
+- ["SE", "ResultCompletion"]
+- ["SE", "String"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "data"]
+- !private ["SE", "init"]
+- !private ["SE", "newRecord"]
+- ["SE", "saveInCloud"]
+- ["SE", "string"]
+- ["SE", "stringClass"]
+- !private ["SS10FoundationE8EncodingV", "utf8"]
+- ["SQ", "=="]
+- !private ["SQ", "Encoding"]
+- ["SQ", "ID"]
+- !private ["SQ", "JSONDecoder"]
+- !private ["SQ", "String"]
+- ["SQ", ""]
+- ["SQ", "_code"]
+- ["SQ", "_domain"]
+- ["SQ", "_getEmbeddedNSError"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "_userInfo"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "data"]
+- !private ["SQ", "default"]
+- !private ["SQ", "delete"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "noRecord"]
+- !private ["SQ", "notCloudType"]
+- !private ["SQ", "perform"]
+- !private ["SQ", "privateCloudDatabase"]
+- !private ["SQ", "recordID"]
+- !private ["SQ", "save"]
+- !private ["SQ", "sortDescriptors"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "toModel"]
+- !private ["SQ", "utf8"]
+- !private ["SQ", "value"]
+- ["s5ErrorP", "=="]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_rawHashValue"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "hash"]
+- ["s5ErrorP", "hashValue"]
+- !private ["s5ErrorP", "noRecord"]
+- !private ["s5ErrorP", "notCloudType"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Encoding"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "Encoding"]
+- !private ["s32ExpressibleByStringInterpolationP", "data"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "Encoding"]
+- !private ["s26ExpressibleByStringLiteralP", "data"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Encoding"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "=="]
+- !private ["SH", "Encoding"]
+- ["SH", "ID"]
+- !private ["SH", "JSONDecoder"]
+- !private ["SH", "String"]
+- ["SH", ""]
+- ["SH", "_code"]
+- ["SH", "_domain"]
+- ["SH", "_getEmbeddedNSError"]
+- ["SH", "_rawHashValue"]
+- ["SH", "_userInfo"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "data"]
+- !private ["SH", "default"]
+- !private ["SH", "delete"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "noRecord"]
+- !private ["SH", "notCloudType"]
+- !private ["SH", "perform"]
+- !private ["SH", "privateCloudDatabase"]
+- !private ["SH", "recordID"]
+- !private ["SH", "save"]
+- !private ["SH", "sortDescriptors"]
+- !private ["SH", "subscript"]
+- !private ["SH", "toModel"]
+- !private ["SH", "utf8"]
+- !private ["SH", "value"]
+- !private ["s6HasherV", "combine"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["10Foundation11JSONEncoderC", "encode"]
+- !private ["10Foundation11JSONEncoderC", "init"]
+- !private ["s25LosslessStringConvertibleP", "Encoding"]
+- !private ["s25LosslessStringConvertibleP", "data"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "Encoding"]
+- !private ["s10MirrorPathP", "data"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "compactMap"]
+- !private ["10Foundation19MutableDataProtocolP", "compactMap"]
+- ["So8NSCodingP", "ID"]
+- !private ["So8NSCodingP", "JSONDecoder"]
+- !private ["So8NSCodingP", "String"]
+- !private ["So8NSCodingP", "data"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "recordID"]
+- !private ["So8NSCodingP", "sortDescriptors"]
+- !private ["So8NSCodingP", "subscript"]
+- !private ["So8NSCodingP", "toModel"]
+- !private ["So8NSCodingP", "value"]
+- ["So9NSCopyingP", "ID"]
+- !private ["So9NSCopyingP", "JSONDecoder"]
+- !private ["So9NSCopyingP", "String"]
+- !private ["So9NSCopyingP", "data"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "recordID"]
+- !private ["So9NSCopyingP", "sortDescriptors"]
+- !private ["So9NSCopyingP", "subscript"]
+- !private ["So9NSCopyingP", "toModel"]
+- !private ["So9NSCopyingP", "value"]
+- !private ["So21NSItemProviderReadingP", "data"]
+- !private ["So21NSItemProviderWritingP", "data"]
+- !private ["So16NSMutableCopyingP", "data"]
+- !private ["So8NSObjectC", "Cloud"]
+- ["So8NSObjectC", "Decodable"]
+- ["So8NSObjectC", "ID"]
+- !private ["So8NSObjectC", "JSONDecoder"]
+- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "data"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "delete"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "perform"]
+- !private ["So8NSObjectC", "privateCloudDatabase"]
+- !private ["So8NSObjectC", "recordID"]
+- !private ["So8NSObjectC", "save"]
+- !private ["So8NSObjectC", "sortDescriptors"]
+- !private ["So8NSObjectC", "subscript"]
+- ["So8NSObjectC", "toModel"]
+- !private ["So8NSObjectC", "value"]
+- ["So8NSObjectP", "ID"]
+- !private ["So8NSObjectP", "JSONDecoder"]
+- !private ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "data"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "delete"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "perform"]
+- !private ["So8NSObjectP", "privateCloudDatabase"]
+- !private ["So8NSObjectP", "recordID"]
+- !private ["So8NSObjectP", "save"]
+- !private ["So8NSObjectP", "sortDescriptors"]
+- !private ["So8NSObjectP", "subscript"]
+- !private ["So8NSObjectP", "toModel"]
+- !private ["So8NSObjectP", "value"]
+- !private ["So11NSPredicateC", "init"]
+- !private ["So11NSPredicateC", "init"]
+- ["So14NSSecureCodingP", "ID"]
+- !private ["So14NSSecureCodingP", "JSONDecoder"]
+- !private ["So14NSSecureCodingP", "String"]
+- !private ["So14NSSecureCodingP", "data"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "recordID"]
+- !private ["So14NSSecureCodingP", "sortDescriptors"]
+- !private ["So14NSSecureCodingP", "subscript"]
+- !private ["So14NSSecureCodingP", "toModel"]
+- !private ["So14NSSecureCodingP", "value"]
+- !private ["So16NSSortDescriptorC", "init"]
+- !private ["So16NSSortDescriptorC", "init"]
+- !private ["So8NSStringC", "data"]
+- !private ["Sk", "compactMap"]
+- !private ["Sm", "Encoding"]
+- !private ["Sm", "compactMap"]
+- !private ["Sm", "data"]
+- !private ["Sm", "init"]
+- !private ["SY", "utf8"]
+- ["15CodableCloudKit6ResultO", "Error"]
+- ["15CodableCloudKit6ResultO", "failure"]
+- ["15CodableCloudKit6ResultO", "success"]
+- !private ["ST", "Encoding"]
+- ["ST", "ID"]
+- !private ["ST", "JSONDecoder"]
+- !private ["ST", "String"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "data"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "recordID"]
+- !private ["ST", "subscript"]
+- !private ["ST", "toModel"]
+- !private ["ST", "value"]
+- !private ["SS", "Encoding"]
+- !private ["SS", "data"]
+- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "Encoding"]
+- !private ["Sy", "data"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "Encoding"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "data"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "Encoding"]
+- !private ["s20TextOutputStreamableP", "data"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Encoding"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "data"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Encoding"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "Encoding"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "data"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "Encoding"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "data"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "Encoding"]
+- !private ["s19_HasContiguousBytesP", "compactMap"]
+- !private ["s19_HasContiguousBytesP", "data"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONDecoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "privateCloudDatabase"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "recordID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sortDescriptors"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "toModel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["s21_ObjectiveCBridgeableP", "Encoding"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
+- !private ["s21_ObjectiveCBridgeableP", "data"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["So13CKRecordValueP", "data"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "So11CKContainerC"
+- !private "So10CKDatabaseC"
+- !private "So7CKQueryC"
+- "So8CKRecordC"
+- "So23CKRecordKeyValueSettingP"
+- !private "8CloudKit24CKRecordValueConvertibleP"
+- !private "8CloudKit21CKRecordValueProtocolP"
+- !private "So15CNKeyDescriptorP"
+- "s7CVarArgP"
+- "15CodableCloudKit0B0C"
+- "15CodableCloudKit0B5ErrorO"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "SE"
+- !private "SS10FoundationE8EncodingV"
+- "SQ"
+- "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- !private "10Foundation11JSONDecoderC"
+- !private "10Foundation11JSONEncoderC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So11NSPredicateC"
+- "So14NSSecureCodingP"
+- !private "So16NSSortDescriptorC"
+- !private "So8NSStringC"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- "15CodableCloudKit6ResultO"
+- "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "So13CKRecordValueP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Contacts.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CloudKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Contacts.framework/Headers/Contacts.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "7feb6b1d0594bc5d220b0a7b89140609"

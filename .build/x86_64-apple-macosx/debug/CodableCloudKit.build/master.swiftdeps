@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "a12904dfd988afd0b5b35703fe22c342"
+build_time: [1558510740, 342226000]
+inputs:
+  "/Users/rpx/Documents/Apps/PODS/CodableCloudKit/Sources/CodableCloudKit.swift": !dirty [1558507472, 874684060]
