@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                      = "CodableCloudKit"
-  s.version                   = "1.0.0"
+  s.version                   = "1.0.1"
   s.summary                   = "CodableCloudKit"
   s.homepage                  = "https://github.com/RpX974/CodableCloudKit"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
