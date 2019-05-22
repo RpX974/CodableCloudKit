@@ -173,7 +173,7 @@ user.removeFromCloud { [weak self] (result: Result<CKRecord.ID?>) in
         print("\(user.username) removed from Cloud")
     case .failure(let error):
         print(error.localizedDescription)
-}
+    }
 }
 ```
 
