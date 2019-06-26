@@ -16,6 +16,8 @@
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
 		3D9C433422746323000A6585 /* CodableCloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* CodableCloudKit.framework */; };
 		3D9C433522746323000A6585 /* CodableCloudKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* CodableCloudKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC6EF58E22C3C9B200332787 /* CodableCloudKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AC6EF58C22C3C9B200332787 /* CodableCloudKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC6EF59222C3C9CA00332787 /* CodableCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* CodableCloudKit.swift */; };
 		ACBE86AA229539A0005C74A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBE86A9229539A0005C74A5 /* Main.storyboard */; };
 		ACBE86AE22953A01005C74A5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBE86AD22953A01005C74A5 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,9 @@
 		3D9C432A2274629C000A6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC6EF58A22C3C9B200332787 /* CodableCloudKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableCloudKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6EF58C22C3C9B200332787 /* CodableCloudKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodableCloudKit_macOS.h; sourceTree = "<group>"; };
+		AC6EF58D22C3C9B200332787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBE86A9229539A0005C74A5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ACBE86AB229539F0005C74A5 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		ACBE86AD22953A01005C74A5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -109,6 +114,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC6EF58722C3C9B200332787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,6 +131,7 @@
 				3D9C42A32274595F000A6585 /* Tests */,
 				3D9C43222274629B000A6585 /* Example */,
 				3D9C429B227458E8000A6585 /* Configs */,
+				AC6EF58B22C3C9B200332787 /* CodableCloudKit-macOS */,
 				3D9C429122745894000A6585 /* Products */,
 				ACBE86AC22953A01005C74A5 /* Frameworks */,
 			);
@@ -135,6 +148,7 @@
 				3D9C43012274611B000A6585 /* CodableCloudKit-tvOSTests.xctest */,
 				3D9C431122746198000A6585 /* CodableCloudKit-macOSTests.xctest */,
 				3D9C43212274629B000A6585 /* Example.app */,
+				AC6EF58A22C3C9B200332787 /* CodableCloudKit_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +210,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AC6EF58B22C3C9B200332787 /* CodableCloudKit-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AC6EF58C22C3C9B200332787 /* CodableCloudKit_macOS.h */,
+				AC6EF58D22C3C9B200332787 /* Info.plist */,
+			);
+			path = "CodableCloudKit-macOS";
+			sourceTree = "<group>";
+		};
 		ACBE86AC22953A01005C74A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +234,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6EF58522C3C9B200332787 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6EF58E22C3C9B200332787 /* CodableCloudKit_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +303,24 @@
 			productReference = 3D9C43212274629B000A6585 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AC6EF58922C3C9B200332787 /* CodableCloudKit-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6EF58F22C3C9B200332787 /* Build configuration list for PBXNativeTarget "CodableCloudKit-macOS" */;
+			buildPhases = (
+				AC6EF58522C3C9B200332787 /* Headers */,
+				AC6EF58622C3C9B200332787 /* Sources */,
+				AC6EF58722C3C9B200332787 /* Frameworks */,
+				AC6EF58822C3C9B200332787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodableCloudKit-macOS";
+			productName = "CodableCloudKit-macOS";
+			productReference = AC6EF58A22C3C9B200332787 /* CodableCloudKit_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -300,6 +349,9 @@
 							};
 						};
 					};
+					AC6EF58922C3C9B200332787 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 3D9C428A22745894000A6585 /* Build configuration list for PBXProject "CodableCloudKit" */;
@@ -316,6 +368,7 @@
 			projectRoot = "";
 			targets = (
 				3D9C428F22745894000A6585 /* CodableCloudKit-iOS */,
+				AC6EF58922C3C9B200332787 /* CodableCloudKit-macOS */,
 				3D9C42F02274604A000A6585 /* CodableCloudKit-iOSTests */,
 				3D9C43202274629B000A6585 /* Example */,
 			);
@@ -347,6 +400,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC6EF58822C3C9B200332787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -372,6 +432,14 @@
 			files = (
 				3D9C43262274629B000A6585 /* ViewController.swift in Sources */,
 				3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6EF58622C3C9B200332787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6EF59222C3C9CA00332787 /* CodableCloudKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +739,66 @@
 			};
 			name = Release;
 		};
+		AC6EF59022C3C9B200332787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "CodableCloudKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.CodableCloudKit.CodableCloudKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AC6EF59122C3C9B200332787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "CodableCloudKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.CodableCloudKit.CodableCloudKit-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -706,6 +834,15 @@
 			buildConfigurations = (
 				3D9C43312274629C000A6585 /* Debug */,
 				3D9C43322274629C000A6585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6EF58F22C3C9B200332787 /* Build configuration list for PBXNativeTarget "CodableCloudKit-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6EF59022C3C9B200332787 /* Debug */,
+				AC6EF59122C3C9B200332787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

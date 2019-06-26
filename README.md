@@ -12,12 +12,6 @@
 <a href="http://cocoapods.org/pods/CodableCloudKit">
 <img src="https://img.shields.io/cocoapods/p/CodableCloudKit.svg?style=flat" alt="Platform">
 </a>
-<a href="https://github.com/Carthage/Carthage">
-<img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
-</a>
-<a href="https://github.com/apple/swift-package-manager">
-<img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
-</a>
 </p>
 
 # CodableCloudKit
@@ -111,7 +105,6 @@ Save method has 2 parameters : a database with a default value (PrivateCloudData
 user.saveInCloud()
 
 // With another Database. In this case, the public database
-
 user.saveInCloud(CKContainer.default().publicCloudDatabase)
 
 // With completion
@@ -162,7 +155,6 @@ Retrieve method has 2 parameters : a database with a default value (PrivateCloud
 user.removeFromCloud()
 
 // With another Database. In this case, the public database
-
 user.removeFromCloud(CKContainer.default().publicCloudDatabase)
 
 // With completion
